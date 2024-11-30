@@ -1,10 +1,12 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
-from secret_key import geminiapi_key
+import os
 
 
-llm = ChatGoogleGenerativeAI(model = 'gemini-pro', google_api_key = geminiapi_key)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+llm = ChatGoogleGenerativeAI(model = 'gemini-pro', google_api_key = GEMINI_API_KEY)
 
 
 def generate_rasturants_names_and_items(cuisine):
