@@ -31,3 +31,7 @@ This project generates a **fancy restaurant name** and a **menu** with categoriz
     ```bash
     pip install -r requirements.txt
     ```
+
+## Access the Application
+
+You can access the deployed application at the following [URL](https://rasturant-name-generator-2.onrender.com/):
